@@ -1,21 +1,59 @@
+/*(1) fork done*/
+/*(2) using brackets live preview*/
+/*(3) using reset sheet*/
+/*(4)  changed boxsizing to border box*/
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
+  box-sizing: border-box;    
   background-color: #333;
   font-family: sans-serif;
-  font-size: 10px;
+  font-size: 10px;  
+    
+    /*(5)  nesting to style text*/
 }
+
 
 .container {
   margin: 0 auto;
   width: 420px;
 }
 
-nav {
+nav {    
   margin: 0 auto;
   padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
 }
 
-.restaurant-list {
+.restaurant-list {    
   padding-top: 50px;
+  display: inline-block;
+    
+    /*(6)  change percentages to establish width of div's in restaurant-list*/
 }
+
+.arrow-left{ 
+    display:inline-block;
+    float: left;
+    padding-left: 0%;
+}
+
+.arrow{
+    float:right;
+    display: block;
+}
+.content{
+    display: inline-block;
+}
+
+.location{
+    a:hover {background-color: orangered; }
+}
+
+/*(7)  change background-color for any div with a location class when hovered upon
